@@ -25,7 +25,6 @@ header h1{
     display: inline-block;
     padding: 6px 12px;
     border-radius: 40px;
-
 }
 .banner{
     position: relative;
@@ -117,7 +116,7 @@ article p{
 }
 .video{
     display: grid;
-    grid-template-columns: 670px 250px 250px;
+    grid-template-columns: 250px 670px 250px;
     
 }
 .video video{
@@ -172,9 +171,43 @@ footer{
 
 @media screen and (max-width: 800px) {
     .banner .welcome h2{
-        font-size: 10px ;
+        font-size: 6px ;
     }
     nav li{
         font-size: 8px;
+    }
+    nav{
+        position: sticky;
+        top: 80px;
+    }
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+    .samurai{
+        width: 200%;
+        height: 150px;
+    }
+    header{
+        background-color:black;
+        font-family: arial;
+        color: slategray;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        text-align: center;
+    }
+    header h1{
+        border: 4px solid slategray;
+        display: inline-block;
+        padding: 2px 2px;
+        border-radius: 20px;
+    }
+    .images li{
+        display: flex;
+        flex-direction: column;
     }
 }
